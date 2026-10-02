@@ -36,7 +36,7 @@
   .adresa{font-stretch:100%;font-weight:500;color:var(--ocel);margin-top:.6rem;font-size:1.15rem}
   .obsah{
     display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;
-    margin:3rem 0 4rem;
+    margin:3rem 0 3rem;
   }
   .obsah p{max-width:60ch}
   .obsah p + p{margin-top:1rem}
@@ -44,6 +44,10 @@
   dl div{display:flex;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:1px solid #c9cbc6}
   dt{color:var(--ocel)}
   dd{font-weight:600;text-align:right}
+  .mapa{margin:0 0 4rem}
+  .mapa iframe{display:block;width:100%;height:420px;border:0;background:var(--beton)}
+  .mapa a{display:inline-block;margin-top:.8rem;color:var(--asfalt);font-weight:600;text-decoration:none;border-bottom:3px solid var(--signal)}
+  .mapa a:hover{color:var(--ocel)}
   .kontakt{background:var(--asfalt);color:var(--bila);padding:3.5rem 0}
   .kontakt div{max-width:1100px;margin:0 auto;padding:0 1.5rem}
   .kontakt p{color:#b9c0c6}
@@ -60,6 +64,7 @@
   footer{max-width:1100px;margin:0 auto;padding:1.5rem;font-size:.85rem;color:var(--ocel)}
   @media (max-width:760px){
     .obsah{grid-template-columns:1fr;gap:2rem}
+    .mapa iframe{height:320px}
   }
 </style>
 </head>
@@ -81,6 +86,13 @@
       <div><dt>Areál</dt><dd>oplocený, kamerový dohled</dd></div>
       <div><dt>Lokalita</dt><dd>Opava-Kateřinky</dd></div>
     </dl>
+  </section>
+
+  <section class="mapa">
+    <iframe src="https://maps.google.com/maps?q=Peka%C5%99sk%C3%A1%201639/79a%2C%20Opava&amp;z=16&amp;output=embed"
+      title="Mapa – Areál Pekařská, Pekařská 1639/79a, Opava" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Peka%C5%99sk%C3%A1%201639/79a%2C%20Opava" target="_blank" rel="noopener">Navigovat do areálu</a>
   </section>
 </main>
 
